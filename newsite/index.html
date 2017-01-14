@@ -1,40 +1,49 @@
-<!DOCTYP html>
-<html>
-  <head>
-    <title>Shonna's Page</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-    <script
-    src="js/script.js/script.js">
-    </script>
-  
-  
-  </head>
-  <body><div class="container">
+/*this is the format for css:
+selector {
+  property: value;
+  }
+*/
 
-<header>
-   <h1>City Gallery</h1>
-</header>
-  
-<nav>
-  <ul>
-    <li><a href="#">London</a></li>
-    <li><a href="#">Paris</a></li>
-    <li><a href="#">Tokyo</a></li>
-  </ul>
-</nav>
+header h1 {
+  color: #00802b;
+}
 
-<article>
-  <h1>London</h1>
-  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</article>
+header {
+  background: url('/img/omaha.jpg');
+  width: 100%;
+  padding: 50px;
+  text-align: center; 
+  background-size: cover;
+}
 
-<footer>Copyright &copy; W3Schools.com</footer>
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav ul li {
+    text-align: center;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-</div>
-</body>
-  </html>
+nav ul li a:hover {
+  color: red;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+}
+
+img:hover{
+  border-radius: 0px;
+}
